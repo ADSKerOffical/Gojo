@@ -1,0 +1,44 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/lolpoppyus/Roblox-Lua/master/Pop%20UI%20Lib", true))()
+
+local ui = library:Tab("limitless purple")
+
+ui:Dropdown("Spawn Purple Shot", {"Hollow Purple","Imaginary Purple","Limitless Purple","200% Purple"}, function(arg)
+	if arg == "Hollow Purple" then
+			game:GetService("Players").LocalPlayer.Character:FindFirstChild("Hollow Purple").LocalScript.Event:FireServer()
+		end
+	if arg == "Imaginary Purple" then
+		  game:GetService("Players").LocalPlayer.Character:FindFirstChild("Imaginary Purple").LocalScript.Event:FireServer()
+  end
+  if arg == "Limitless Purple" then
+		  game:GetService("Players").LocalPlayer.Character:FindFirstChild("Limitless Purple").LocalScript.Event:FireServer()
+  end
+  if arg == "200% Purple" then
+		  game:GetService("Players").LocalPlayer.Character:FindFirstChild("200% Purple").LocalScript.Event:FireServer()
+  end
+end)
+
+ui:Label("Use once")
+
+ui:Textbox("Hollow Purple", function(arg)
+for i = 1, arg do
+game:GetService("Players").LocalPlayer.Character:FindFirstChild("Hollow Purple").LocalScript.Event:FireServer()
+end
+end)
+
+ui:Textbox("Imaginary Purple", function(arg)
+for i = 1, arg do
+game:GetService("Players").LocalPlayer.Character:FindFirstChild("Imaginary Purple").LocalScript.Event:FireServer()
+end
+end)
+
+ui:Textbox("Limitless Purple", function(arg)
+for i = 1, arg do
+game:GetService("Players").LocalPlayer.Character:FindFirstChild("Limitless Purple").LocalScript.Event:FireServer()
+end
+end)
+
+ui:Textbox("200% Purple", function(arg)
+for i = 1, arg do
+game:GetService("Players").LocalPlayer.Character:FindFirstChild("200% Purple").LocalScript.Event:FireServer()
+end
+end)
